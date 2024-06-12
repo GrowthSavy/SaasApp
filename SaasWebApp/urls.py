@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from SaasApp.views import HomeView
+from SaasApp.views import HomeView, AboutView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('indexView/',HomeView,name="homeView"),
+    path('aboutView/',AboutView,name="AboutView"),
 ]
